@@ -18,29 +18,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 
 public class EbayClass {
-
+//ebay motors click by xPath
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.gecko.driver","/Users/kpendelabalavenk/Downloads/geckodriver");
 		WebDriver driver = new FirefoxDriver();
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://www.ebay.com/");
-		//driver.get("http://test1.absofttrainings.com/shop");
-		//WebElement findElement=driver.findElement(By.linkText("Motors"));
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//findElement.click();
-		//WebDriverWait wait = new WebDriverWait(driver, 30);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Motors")));
-		//wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Motors")));
-		//driver.findElement(By.className("hl-cat-nav_js-tab")).click();
-		//driver.findElement(By.xpath("//li[@class='hl-cat-nav_js-tab' & @href='https://www.ebay.com/motors']"));
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//Thread.sleep(100);
-//		List<WebElement> elems = driver.findElements(By.cssSelector("ul.hl-cat-nav__container>li.hl-cat-nav__js-tab> div>a"));
-//		 elems.get(3).click();//for the 3rd element
-		//driver.findElement(By.cssSelector("[href*='/motors']")).click();
 		driver.findElement(By.xpath("//*[@id='w0-container']/li[4]")).click();
-		//driver.findElement(By.partialLinkText("Gift Cards")).click();
 
 	}
 
