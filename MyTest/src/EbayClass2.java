@@ -11,6 +11,8 @@ public class EbayClass2 {
 		driver.get("https://www.ebay.com/");
 		driver.findElement(By.partialLinkText("Gift Cards")).click();
 		
+		//Sample
+		
 //**************************	1) sales and events*****************************	
 		System.out.println(driver.findElement(By.className("nav-wrapper")).getText());
 		System.out.println(driver.findElement(By.className("nav-wrapper")).getText().contains("Sales & Events"));
