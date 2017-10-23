@@ -53,8 +53,10 @@ public class EbayClass2 {
 		System.out.println(driver.findElement(By.xpath("//div[@_sp='p2051541.m4646.l4']/li/h2/div")).getText().contains("Shop by Occaxxxxsion"));
 		
 		System.out.println(driver.findElement(By.xpath("//div[@_sp='p2051541.m4646.l4']/li/h2/div")).isDisplayed());
-
-	
+		
+		
+		
+		
 	}
 
 }
